@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Titillium+Web&display=swap');
+.HomeBodyMain{
+    /* border-top:1px solid #118442; */
+    margin-top:2em;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomeBodyTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+.HomeBodyTopH1{
+    font-size: 30px;
+    color: #118442;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.HomeBodyButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 7em; */
+    font-size: 20px;
+    font-weight:500;
+    background-color: #118442;
+    border: none;
+    color: #fff;
+    padding:0.3em;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.HomeBodyButton:hover{
+    background-color: #ffffff;
+    color: #118442;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.MainContentDiv{
+    display: flex;
+    margin-top:1em;
+    margin-bottom:1em;
+    width: 100%;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.BlogCard{
+    text-decoration: none;
+    color: inherit;
+   width: 90%;
+   max-width: 300px;
+   cursor: pointer;
+   height: 21em; 
+    background-color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   margin-bottom:1em;
+   margin-left:1em;
+   margin-right:1em;
+   transition: 0.3s ease-in-out;
+
+
+}
+.BlogCard:hover{
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.BlogCardImage{
+    width:100%;
+    height: 10em;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.BlogPostInfoDiv{
+    width: 100%;
+}
+.BlogPostPublishDate{
+    font-size: 15px;
+    margin-top: 0.5em;
+    margin-left:1em;
+    margin-bottom: 0;
+    color: #118442;
+    font-family: 'Covered By Your Grace',cursive;
+    font-weight: bold;
+    padding: 0;
+}
+.BlogCardTitleDiv{
+    padding: 0.5em;
+    margin-left:0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+.BlogCardTitle{
+    margin: 0;
+    padding: 0;
+    padding-bottom:0;
+    font-size: 20px;
+}
+.BlogCardAuthor{
+    margin-top: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 1em;
+    color: #933ae1;
+    font-family: 'Covered By Your Grace',cursive;
+    font-weight: bold;
+}
+
+/* Loader CSS Starts */
+.ImageLoader{
+    border-radius: 5px;
+    background-color: lightgrey;
+    width: 100%;
+    height: 10em;
+    box-shadow: rgba(50, 50, 93, 0.07) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .CardInfoLoader{
+        width: 90%;
+        margin-left:1em;
+        margin-top:1em;
+    }
+    .CardTopLoader{
+    width: 10em;
+    height:1em;
+    border-radius: 5px;
+    background-color: lightgray;
+    box-shadow: rgba(50, 50, 93, 0.07)  0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .CardTitleLoader{
+        width: 100%;
+        height:6em;
+        border-radius: 5px;
+        background-color: lightgray;
+        /* box-shadow: rgba(123, 123, 123, 0.95) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+        box-shadow: rgba(50, 50, 93, 0.07)  0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin-top:0.5em;    
+    }
+    .CardBottomLoader{
+        width: 95%;
+        height:1em;
+        margin-top:0.5em; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .CardBottomLoaderInner{
+        width: 30%;
+        height:1em;
+        border-radius: 5px;
+        background-color: lightgray;
+        /* box-shadow: rgba(123, 123, 123, 0.95) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+        box-shadow: rgba(50, 50, 93, 0.07)  0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    
+
+/* Loader CSS Ends */
+.FetchMoreBlogsDiv{
+    width: 20em;
+    height:20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FetchMoreBlogsButton{
+    background-color: transparent;
+    width:10em;
+    height:5em;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+.BlogCard{
+    max-width:400px ;
+}
+
+}
+
+@media screen and (max-width: 870px) {
+    .BlogCard{
+        max-width:350px ;
+    }
+    
+}
+@media screen and (max-width: 765px) {
+    .BlogCard{
+        max-width:500px ;
+    }
+    
+}   

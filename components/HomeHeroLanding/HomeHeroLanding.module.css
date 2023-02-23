@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Titillium+Web&display=swap');
+.HomeHeroLanding{
+    display:flex;
+    width:100%;
+    margin-top:5em;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+}
+.RightCarouselDiv{
+    width:60%;
+    flex-wrap:wrap;
+    justify-content:center;
+    display:flex;
+    align-items:flex-start
+}
+
+.CarouselWindow{
+    width:90%;
+    height:400px;
+    background-color:white;
+    margin:1em;
+    border-radius:10px;
+    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Covered By Your Grace',cursive; */
+    justify-content:center;
+    display:flex;
+    align-items:center;
+}
+.CarouselImage{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.LeftPostDiv{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.TrendingTitle{
+    font-family: 'Covered By Your Grace',cursive;
+    color:#118442;
+    text-decoration:underline
+}
+
+
+.PostCard{
+width:80%;
+height:6em;
+margin-bottom: 1em;
+text-decoration: none;
+border-radius: 5px;
+display: flex;
+padding: 1em;
+justify-content: flex-start;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.CardImage{
+height: 6em;
+width:6em;
+border-radius: 5px;
+object-fit:cover;
+}
+.CardInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    margin-left:0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+position: relative;
+}
+.CardDate{
+    padding: 0;
+    margin: 0;
+    font-family: 'Covered By Your Grace',cursive;
+    color: #118442;
+    font-size: 17px;
+}
+.CardTitle{
+padding: 0 ;
+margin: 0;
+font-size: 17px;
+overflow: hidden;
+text-overflow: ellipsis;
+font-family: 'Titillium Web', sans-serif;
+
+display: -webkit-box;
+-webkit-line-clamp: 2; /* number of lines to show */
+        line-clamp: 2; 
+-webkit-box-orient: vertical;
+font-weight: bold;
+}
+.CardAuthor{
+    padding: 0;
+    margin: 10px;
+    font-family: 'Covered By Your Grace',cursive;
+    color: #933ae1;
+    font-size: 12px;
+    width:100%;
+    position: absolute;
+    bottom:0;
+    right:0;
+    text-align: right;
+}
+
+
+/* ------------Loading Components CSS Starts ---------------*/
+
+.ImageLoader{
+border-radius: 5px;
+background-color: lightgrey;
+height: 100%;
+aspect-ratio: 1 / 1;
+/* box-shadow: rgba(0, 0, 0, 0.02) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+box-shadow: rgba(50, 50, 93, 0.07) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.CardInfoLoader{
+    width: 100%;
+    margin-left:1em
+}
+.CardTopLoader{
+width: 10em;
+height:1em;
+border-radius: 5px;
+background-color: lightgray;
+/* box-shadow: rgba(0, 0, 0, 0.02) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+box-shadow: rgba(50, 50, 93, 0.07)  0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.CardTitleLoader{
+    width: 95%;
+    height:3em;
+    border-radius: 5px;
+    background-color: lightgray;
+    /* box-shadow: rgba(123, 123, 123, 0.95) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: rgba(50, 50, 93, 0.07)  0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-top:0.5em;    
+}
+.CardBottomLoader{
+    width: 95%;
+    height:1em;
+    margin-top:0.5em; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.CardBottomLoaderInner{
+    width: 30%;
+    height:1em;
+    border-radius: 5px;
+    background-color: lightgray;
+    /* box-shadow: rgba(123, 123, 123, 0.95) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: rgba(50, 50, 93, 0.07)  0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* ------------Loading Components CSS Ends ---------------*/
+/* ------------Error Components CSS Starts ---------------*/
+.ErrorMain{
+    width:90%;
+    height:auto;
+    /* aspect-ratio: 4/3; */
+    padding-top:1em;
+    padding-bottom:1em;
+    border-radius: 5px;
+    box-shadow: rgb(255, 0, 0) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    margin-bottom: 1em;
+
+}
+.ErroSub{
+    width:90%;
+    height:auto;
+    /* aspect-ratio: 4/3; */
+    padding-top:1em;
+    padding-bottom:1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    margin-bottom: 1em;
+
+}
+
+.ErrorImage{
+    width:100%;
+    height:15em;
+    object-fit: contain;
+    /* background-color: #933ae1; */
+}
+
+.RetryButton{
+    width:10em;
+    height:3em;
+    background-color: transparent;
+    border:2px solid #118443;
+    border-radius:5px;
+    font-weight: bold;
+    color: #118442;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+    box-shadow: #118442 0px 50px 100px -20px, #118442 0px 30px 60px -30px, #118442 0px -2px 6px 0px inset;
+}
+.RetryButton:hover{
+    background-color: #118442;
+    border:2px solid #ffffff;
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+
+
+
+
+
+/* ------------Error Components CSS Ends ---------------*/
+@media screen and (max-width: 850px) {
+.HomeHeroLanding{
+    flex-direction: column;
+    align-items: center;
+}
+.RightCarouselDiv{
+    width: 100%;
+}    
+.CarouselWindow{
+    width:100%;
+    height:70vh;
+    max-height:300px ;
+    /* background-color:rgb(0, 0, 0); */
+    margin:0em;
+    margin-top: 0em;
+    border-radius:0px;
+}
+.LeftPostDiv{
+    width:100%;
+}
+.PostCard{
+    width:90%;
+    height:8em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    display: flex;
+    padding: 0.5em;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .CardInfo{
+        /* display: flex; */
+        padding: 0.5em;
+        margin-left:0.5em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+                line-clamp: 2; 
+        -webkit-box-orient: vertical;
+    
+        /* justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start; */
+    }
+    .CardImage{
+        height: 8em;
+        width:8em;
+        border-radius: 5px;
+        object-fit:cover;
+        }
+}
+
+@media screen and (max-width: 500px) {
+    .CarouselWindow{
+        width:100%;
+        height:40vh;
+        max-height:300px ;
+        /* background-color:rgb(0, 0, 0); */
+        margin:0em;
+        margin-top: 0em;
+        border-radius:0px;
+    }
+
+.PostCard{
+    width:90%;
+    }
+    .CardInfo{
+        padding: 0em;
+        justify-content: space-between;
+    }
+    .CardImage{
+        height: 8em;
+        width:8em;
+        border-radius: 5px;
+        object-fit:cover;
+}
+.CardDate{
+    font-size: 15px;
+}
+.CardTitle{
+font-size: 17px;
+-webkit-line-clamp: 3; /* number of lines to show */
+}
+.CardInfoLoader{
+    width: 80%;
+    margin-left:0.5em
+}
+.CardTopLoader{
+    width: 4em;
+    }
+    }

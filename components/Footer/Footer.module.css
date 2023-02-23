@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Titillium+Web&display=swap');
+
+.FooterMain{
+    background-color: #118442;
+    width:100%;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterInner{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1em;
+}
+.FooterLogo{
+    width: 100px;
+    height:50px;
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background-color: #118442;
+    margin-right:1em;
+}
+@media screen and (max-width: 400px) {
+
+    .FooterLogo{
+        width: 70px;
+        height:40px;
+        object-fit: contain;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        background-color: #118442;
+        margin-right:1em;
+    }
+}

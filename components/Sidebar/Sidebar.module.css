@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Titillium+Web&display=swap');
+.SideBarLayover{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:rgba(0, 0, 0, 0.2);
+    transition:0.4s ease-in;
+}
+.SideBarMain{
+    width:70vw;
+    font-family: 'Titillium Web', sans-serif;
+    top:0;
+    right:0;
+    height:100vh;
+    background-color:#fff;
+    position:absolute;
+    max-width:300px;
+    border-radius:5px;
+    transition:0.4s ease-in;
+    overflow-x:scroll;
+    z-index:99;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+/* Hidden Starts here */
+
+.SideBarLayoverHidden{
+    width:0;
+    height:100vh;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:rgba(0, 0, 0, 0.2);
+    transition:0.4s ease-out;
+    visibility:hidden;
+    display:none
+}
+.SideBarMainHidden{
+    width:0;
+    top:0;
+    right:0;
+    height:100vh;
+    background-color:#fff;
+    position:absolute;
+    max-width:300px;
+    visibility:hidden;
+    display:none;
+    border-radius:5px;
+    transition:0.4s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Main Content CSS Rules */
+.SidebarSearchButton{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left:2em;
+    width:100%;
+    background-color:transparent;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    color:#118442;
+}
+.SidebarLink{
+    display:flex;
+    align-items:center;
+    margin-top:1em;
+    justify-content:flex-start;
+    padding-left:2em;
+    text-decoration:none;
+    color:#118442;
+}
+.SidebarLinkActive{
+    display:flex;
+    align-items:center;
+    margin-top:1em;
+    justify-content:flex-start;
+    padding-left:2em;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background-color:#118442
+
+}
+.SidebarLinkDonate{
+    display:flex;
+    align-items:center;
+    margin:1em;
+    justify-content:center;
+    text-decoration:none;
+    color:#fff;
+    border-radius:5px;
+    background-color:#118442;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.SidebarLinkP{
+    margin-left:1em;
+    text-decoration:none
+}
+
+.searchBtnText{
+margin-left:1em;
+}
+.TopSidebar{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.Logo{
+    width:10em;
+    height:5em;
+}
+.blogTitle{
+    margin-top:-10px;
+    font-size:30px;
+    color:#118442;
+    margin-bottom:10px;
+    font-family: 'Covered By Your Grace',cursive;
+}
+.SidebarCancelButton{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    background-color:transparent;
+    border:none;
+    color:#118442;
+    margin:10px;
+    width:3em;
+    border-radius:100%;
+    height:3em;
+}

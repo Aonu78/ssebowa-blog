@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Titillium+Web&display=swap');
+.headerMain{
+    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Covered By Your Grace', cursive; */
+    background-color: #fff;
+    width:100vw;
+    height:4em;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-left:1em;
+    padding-right:1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index:999;
+    transition: 0.4s ease-in-out;
+
+}
+.headerMainSidebar{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #fff;
+    width:100vw;
+    /* height:10em; */
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding-left:1em;
+    padding-right:1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index:999;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 1em;
+    transition: 0.4s ease-in-out;
+}
+.SidebarBakdrop{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.342);
+    z-index: 99;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.SidebarNavMain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;    
+    margin-top:2em;
+    margin-bottom:2em;
+}
+
+.logoImage{
+    width:10em;
+    height:4em;
+    object-fit:contain;
+    margin-top:10px;
+}
+.LogoText{
+    font-family: 'Covered By Your Grace',cursive;
+    font-size:30px;
+    color:black;
+}
+.HamburgerSideNav{
+    display:none;
+    margin-right:1em;
+    justify-content:center;
+    align-items:center
+}
+.rightSideNav{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:10px;
+    height:2em;
+    margin-right:2em;
+}
+.HideAfterAPoint{
+    width:40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.searchFormNabar{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.SearchInput{
+    width: 50%;
+    height: 60%;
+    padding: 0.5em;
+    border: 2px solid #11844300;
+    color: #118442;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-width: 200px;
+}
+.ShowAfterAPoint{
+    display: none;
+}
+
+.NavLinkActive{
+    text-decoration:none;
+    color:#118442;
+    border-bottom:2px solid #118442;
+    height:2em;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-left:1em;
+    padding-right:1em;
+    font-weight:bold;
+    margin-right:1em;
+    font-size:12px
+}
+.NavLink{
+    text-decoration:none;
+    color:#118442;
+    border-bottom:2px solid transparent;
+    height:2em;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-left:1em;
+    padding-right:1em;
+    font-weight:400;
+    margin-right:1em;
+    font-size:14px;
+    transition:0.4s ease-out;
+}
+.NavLink:hover{
+    border-bottom:2px solid #118442;
+    transition:0.2s ease-in;
+
+}
+
+.NavLinkDonate:hover{
+    color:#118442;
+    border:2px solid #118442;
+    background-color:#fff;
+    transition:0.2s ease-in;
+}
+
+.NavSearchButton{
+    width:3em;
+    height:3em;
+    border-radius:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:2em;
+    background-color:transparent;
+    color:#118442;
+    cursor:pointer;
+    border:2px solid #11844300;
+    transition:0.4s ease-out
+}
+.NavSearchButton:hover{
+    background-color:#118442;
+    transition:0.2s ease-in;
+    color:#fff;
+}
+
+.NavSearchButtonActive{
+    width:3em;
+    height:3em;
+    border-radius:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:1em;
+    background-color:#118442;
+    color:#fff;
+    cursor:pointer;
+    border:2px solid #11844300;
+    transition:0.4s ease-out
+}
+.NavLinkDonate{
+    text-decoration:none;
+    color:#fff;
+    border:2px solid #118442;
+    background-color:#118442;
+    border-radius:2px;
+    height:2em;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-left:1em;
+    padding-right:1em;
+    font-weight:400;
+    margin-right:1em;
+    font-size:15px;
+    transition:0.4s ease-out;
+}
+.HamburgerSideNavButton{
+    width:3em;
+    height:3em;
+    border-radius:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:transparent;
+    color:#118442;
+    cursor:pointer;
+    border:2px solid transparent;
+    transition:0.4s ease-out;
+    margin-left:-1em
+}
+
+.HamburgerSideNavButton:hover{
+    background-color:#118442;
+    transition:0.2s ease-in;
+    color:#fff;
+}
+
+.NavLinkP{
+    margin-left:5px;
+}
+@media screen and (max-width: 1030px) {
+.HideAfterAPoint{
+display: none;
+}
+.ShowAfterAPoint{
+    display: flex;
+}
+}
+
+@media screen and (max-width: 885px) {
+    .logoImage{
+        width:8em;
+        height:4em;
+        object-fit:contain;
+        margin-top:10px;
+    }
+.LogoText{
+    font-size:20px
+}
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .headerMain {
+        padding-left:0.5em;
+        padding-right:0.5em;
+    }
+    .LogoText{
+        font-size:25px
+    }
+    .NavLinkActive{
+        padding-left:0.5em;
+        padding-right:0.5em;
+        font-weight:600;
+        margin-right:1em;
+        font-size:12px;
+    }
+    .NavLink{
+        text-decoration:none;
+        color:#118442;
+        padding-left:0.5em;
+        padding-right:0.5em;
+        font-size:12px;
+        transition:0.4s ease-out;
+    }
+    .NavSearchButton{
+        width:2.5em;
+        height:2.5em;
+
+    }
+    .NavLinkDonate{
+        padding-left:0.5em;
+        padding-right:0.5em;
+        font-weight:400;
+        margin-right:1em;
+        font-size:12px;
+    }
+  }
+
+
+@media screen and (max-width: 675px) {
+    .LogoText{
+        font-size:20px
+    }
+    .headerMain {
+        padding-left:0em;
+        padding-right:0em;
+    }
+    .rightSideNav{
+        padding:0px;
+        height:2em;
+        margin-right:0.5em
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .NavLinkP{
+        display:none
+    }
+    .LogoText{
+        font-size:25px
+    }
+  }
+
+@media screen and (max-width: 450px) {
+    .headerMain {
+        padding-left:0em;
+        padding-right:1em;
+    }
+    .rightSideNav{
+        display:none
+    }
+    .HamburgerSideNav{
+        display:flex;
+    }
+  }

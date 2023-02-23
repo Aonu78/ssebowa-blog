@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Titillium+Web&display=swap');
+
+.SearchMain{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.SearchInner{
+margin-top:5em;
+width: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+.SearchForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SearchInput{
+    width:70%;
+    max-width: 400px;
+    height: 2em;
+    padding: 0.5em;
+    border: 2px solid #118442;
+    border-radius: 0px;
+    color: #118442;
+    font-size: 20px;
+}
+.SearchInput:focus{
+    border: 2px solid #118442!important;
+}
+.SearchButton{
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-left:0.2em;
+    color: #118442;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.SearchButton:hover{
+    background-color: #118442;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+
+
+}
+.SearchResultsMain{
+margin-top:2em;
+width: 95%;
+max-width: 1000px;
+}
+.SearchTopDiv{
+display: flex;
+flex-direction: row-reverse;
+color: grey;
+}
+.SearchResultsCardsDiv{
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
